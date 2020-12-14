@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sun-labs/cloudgarden-npm/issues"
   },
-  "homepage": "https://github.com/sun-labs/cloudgarden-npm#readme"
+  "homepage": "https://github.com/sun-labs/cloudgarden-npm#readme",
+  "devDependencies": {
+    "standard": "^16.0.3"
+  }
 }

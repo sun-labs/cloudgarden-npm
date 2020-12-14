@@ -8,7 +8,7 @@ Support sensor handling for [Cloud Garden](https://cloudgarden.nl/), but can be 
 
 ## Dependencies
 
-- `TBD`
+- `None`
 
 ## Install
 
