@@ -1,4 +1,4 @@
-![test](docs/assets/header.jpg)
+![Logo](docs/assets/header.png)
 
 [![NPM](https://img.shields.io/npm/v/cloud-garden.svg)](https://www.npmjs.com/package/cloud-garden) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
