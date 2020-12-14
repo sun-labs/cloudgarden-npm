@@ -1,6 +1,6 @@
 ![test](docs/assets/header.jpg)
 
-[![NPM](https://img.shields.io/npm/v/react-flex-it.svg)](https://www.npmjs.com/package/cloud-garden) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/cloud-garden.svg)](https://www.npmjs.com/package/cloud-garden) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## About
 
