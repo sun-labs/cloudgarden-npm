@@ -42,9 +42,14 @@ describe('qr code parsing', () => {
     expect(mac).toBe('BB:CC:DD:EE:FF')
     expect(name).toBe('GC.AD.SFJSD')
   })
-  test('faulty print', () => {
+  test('correct print', () => {
     const { mac, name } = parseQRData('aa:bb:cc:dd:ee:ff-GC.AD.SFJSD')
     expect(mac).toBe('AA:BB:CC:DD:EE:FF')
+    expect(name).toBe('GC.AD.SFJSD')
+  })
+  test('faulty print with lookup', () => {
+    const { mac, name } = parseQRData('F5:c4:AA:bb:Cc-GC.AD.SFJSD')
+    expect(mac).toBe('FC:F5:C4:AA:BB:CC')
     expect(name).toBe('GC.AD.SFJSD')
   })
 })
