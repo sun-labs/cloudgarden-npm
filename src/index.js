@@ -48,7 +48,7 @@ const lookupTable = (secound, third) => {
     case (secound === '0A' && third === 'C4'): return '24'
     case (secound === 'FE' && third === '34'): return '18'
     case (secound === '52' && third === '1C'): return '10'
-    default: return 'XX'
+    default: return undefined
   }
 }
 
@@ -57,10 +57,11 @@ function macLookup (macAddress = '', splitSymbol = ':') {
   const lenght = macAddressParsed.split(splitSymbol).length - 1
   if (lenght === 5) {
     return macAddressParsed
-  } else if (lenght < 5) {
+  } else if (lenght === 4) {
     const mac = macAddressParsed.split(':')
     const firstValue = lookupTable(mac[0], mac[1])
-    return firstValue + ':' + macAddressParsed
+    if (firstValue) return firstValue + ':' + macAddressParsed
+    else return macAddressParsed
   } else {
     return macAddressParsed
   }
