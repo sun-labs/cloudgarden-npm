@@ -66,4 +66,4 @@ function macLookup (macAddress = '', splitSymbol = ':') {
   }
 }
 
-module.exports = macLookup
+module.exports.macLookup = macLookup
