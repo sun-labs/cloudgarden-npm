@@ -66,4 +66,24 @@ function macLookup (macAddress = '', splitSymbol = ':') {
   }
 }
 
+/**
+ * Get mac and name of sensors qr code string as object
+ * @param {String} stringFromQr
+ * @returns { mac, name }
+ */
+const parseQRData = (stringFromQr) => {
+  if (!stringFromQr || !stringFromQr.split) return null
+  const [qrMac, qrName] = stringFromQr.split('-')
+  const formattedMac = macLookup(qrMac)
+  return {
+    mac: formattedMac,
+    name: qrName
+  }
+}
+
+module.exports = {
+  macLookup,
+  parseQRData
+}
+
 module.exports.macLookup = macLookup

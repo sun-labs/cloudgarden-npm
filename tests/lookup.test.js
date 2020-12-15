@@ -1,6 +1,9 @@
-/* global expect test */
+/* global expect test describe */
 
-const { macLookup } = require('cloud-garden')
+const {
+  parseQRData,
+  macLookup
+} = require('cloud-garden')
 
 test('', () => {
   const input = 'aa:bb:cc:dd:ee:ff'
@@ -31,4 +34,17 @@ test('', () => {
 test('', () => {
   const result = macLookup('ff:DD:dd:ee:ff:gg:hh')
   expect(result).toBe('FF:DD:DD:EE:FF:GG:HH')
+})
+
+describe('qr code parsing', () => {
+  test('faulty print', () => {
+    const { mac, name } = parseQRData('bb:cc:dd:ee:ff-GC.AD.SFJSD')
+    expect(mac).toBe('BB:CC:DD:EE:FF')
+    expect(name).toBe('GC.AD.SFJSD')
+  })
+  test('faulty print', () => {
+    const { mac, name } = parseQRData('aa:bb:cc:dd:ee:ff-GC.AD.SFJSD')
+    expect(mac).toBe('AA:BB:CC:DD:EE:FF')
+    expect(name).toBe('GC.AD.SFJSD')
+  })
 })
