@@ -1,6 +1,7 @@
 const lookupTable = (secound, third) => {
   switch (true) {
     case (secound === 'F5' && third === 'C4'): return 'FC'
+    case (secound === 'E2' && third === 'E6'): return 'E0'
     case (secound === 'CF' && third === 'A2'): return 'F4'
     case (secound === '08' && third === 'D1'): return 'F0'
     case (secound === 'FA' && third === 'BC'): return 'EC'
