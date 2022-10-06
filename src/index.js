@@ -52,7 +52,6 @@ const lookupTable = (secound, third) => {
     case (secound === '94' && third === '54'): return '34'
     case (secound === '91' && third === '51'): return '40'
     case (secound === '4c' && third === 'ab'): return '24'
-    case (secound === '4c' && third === 'ab'): return '24'
     case (secound === 'bf' && third === '25'): return '58'
     default: return undefined
   }
