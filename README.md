@@ -4,7 +4,7 @@
 
 ## About
 
-Support sensor handling for [Cloud Garden](https://cloudgarden.nl/), but can be usefull for any project working with IOT.
+Support sensor handling for [Cloud Garden](https://cloudgarden.nl/), but can be useful for any project working with IOT.
 
 ## Dependencies
 
